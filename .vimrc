@@ -49,7 +49,11 @@ let g:SuperTabDefaultCompletionType='context'
 " Python - PyDoc Preview
 set completeopt=menuone,longest,preview
 set expandtab
-set tabstop=4
+set ts=4 " Tab with 4 spaces
+set shiftwidth=4 " When use >> or <<, shift lines by 4 spaces
+
+set cursorline " Highlight the line under the cursor
+set showmatch " Show matching pair of () [] {}
 
 " NERDTree
 map <leader>n :NERDTreeToggle<CR>
